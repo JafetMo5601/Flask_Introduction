@@ -27,7 +27,7 @@ def index():
             return redirect('/')
 
         except:
-            return 'There was an issue adding your task!'
+            return 'There was a problem adding your task!'
 
     else:
         tasks = ToDo.query.order_by(ToDo.date_created).all()
